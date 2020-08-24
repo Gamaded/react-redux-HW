@@ -19,11 +19,19 @@ let AddComment = (props) => {
 		12: "Декабря"
 	};
 
+	let CheckMins = function(comm) {
+		if (comm.date.min < 10) {
+			return `0${comm.date.min}`;
+		} else {
+			return comm.date.min;
+		}
+	};
+
 	return(
 		<ul>
 			{
 				comments.map(comm => {
-					if (comm.date.min < 9) {comm.date.min = `0${comm.date.min}`};
+
 					return(
 						<li 
 							key={comm.id}
@@ -43,7 +51,7 @@ let AddComment = (props) => {
 									months[comm.date.month]
 								} </span>
 								<span className="hour">{comm.date.hour}:</span>
-								<span className="mins">{comm.date.min}</span>
+								<span className="mins">{CheckMins(comm)}</span>
 							</div>
 						</li>
 					)
