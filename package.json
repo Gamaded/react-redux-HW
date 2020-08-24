@@ -1,0 +1,30 @@
+{
+  "name": "homework1299133",
+  "version": "15.0.0",
+  "description": "webpack",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    
+    "css-loader": "^4.2.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "mini-css-extract-plugin": "^0.10.0",
+    "path": "^0.12.7",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --mode production",
+    "dev": "./node_modules/.bin/webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ruslan Karimov",
+  "license": "MIT"
+}
