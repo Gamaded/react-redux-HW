@@ -2,10 +2,10 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './baseStyle.css';
 import Comms from './containers/Comms.js';
 import comments from './reducers/index.js';
 import {createStore} from 'redux';
+import './baseStyle.css';
 
 let savedComments = localStorage.getItem('commentsStorage');
 
